@@ -10,28 +10,14 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-      <todo-wc></todo-wc>
-      <timer-wc message="time is "></timer-wc>
+      <!-- <todo-wc></todo-wc>
+      <timer-wc message="time is "></timer-wc> -->
+      <px-jo cancel-action="add_action"></px-jo>
     </div>
     <script>
-      document.querySelector('todo-wc').setAttribute(
-        'items',
-        JSON.stringify([
-          {
-            id: 1,
-            title: 'first task',
-            done: false
-          },
-          {
-            id: 2,
-            title: 'second task',
-            done: true
-          }
-        ])
-      )
       document.querySelector('todo-wc').setAttribute('add-action', 'add_action')
       function add_action() {
-        alert('hie')
+        alert('closing ...')
       }
     </script>
   </body>
